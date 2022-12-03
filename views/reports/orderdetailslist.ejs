@@ -1,0 +1,24 @@
+
+<div id="report-title"><h1></h1></div>
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Ordernumber</th>
+            <th>Productcode</th>
+            <th>Quantityordered</th>
+            <th>Priceeach</th>
+            <th>Orderlinenumber</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.ordernumber %></td>
+            <td><%= record.productcode %></td>
+            <td><%= record.quantityordered %></td>
+            <td><%= record.priceeach %></td>
+            <td><%= record.orderlinenumber %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>

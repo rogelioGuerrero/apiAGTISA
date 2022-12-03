@@ -1,0 +1,32 @@
+
+<div id="report-title"><h1></h1></div>
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Officecode</th>
+            <th>City</th>
+            <th>Phone</th>
+            <th>Addressline1</th>
+            <th>Addressline2</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Postalcode</th>
+            <th>Territory</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.officecode %></td>
+            <td><%= record.city %></td>
+            <td><%= record.phone %></td>
+            <td><%= record.addressline1 %></td>
+            <td><%= record.addressline2 %></td>
+            <td><%= record.state %></td>
+            <td><%= record.country %></td>
+            <td><%= record.postalcode %></td>
+            <td><%= record.territory %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>

@@ -1,0 +1,32 @@
+
+<div id="report-title"><h1></h1></div>
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Productcode</th>
+            <th>Productname</th>
+            <th>Productline</th>
+            <th>Productscale</th>
+            <th>Productvendor</th>
+            <th>Productdescription</th>
+            <th>Quantityinstock</th>
+            <th>Buyprice</th>
+            <th>Msrp</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.productcode %></td>
+            <td><%= record.productname %></td>
+            <td><%= record.productline %></td>
+            <td><%= record.productscale %></td>
+            <td><%= record.productvendor %></td>
+            <td><%= record.productdescription %></td>
+            <td><%= record.quantityinstock %></td>
+            <td><%= record.buyprice %></td>
+            <td><%= record.msrp %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>

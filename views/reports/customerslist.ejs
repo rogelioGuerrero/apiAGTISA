@@ -1,0 +1,40 @@
+
+<div id="report-title"><h1></h1></div>
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Customernumber</th>
+            <th>Customername</th>
+            <th>Contactlastname</th>
+            <th>Contactfirstname</th>
+            <th>Phone</th>
+            <th>Addressline1</th>
+            <th>Addressline2</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Postalcode</th>
+            <th>Country</th>
+            <th>Salesrepemployeenumber</th>
+            <th>Creditlimit</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.customernumber %></td>
+            <td><%= record.customername %></td>
+            <td><%= record.contactlastname %></td>
+            <td><%= record.contactfirstname %></td>
+            <td><%= record.phone %></td>
+            <td><%= record.addressline1 %></td>
+            <td><%= record.addressline2 %></td>
+            <td><%= record.city %></td>
+            <td><%= record.state %></td>
+            <td><%= record.postalcode %></td>
+            <td><%= record.country %></td>
+            <td><%= record.salesrepemployeenumber %></td>
+            <td><%= record.creditlimit %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>

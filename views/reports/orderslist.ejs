@@ -1,0 +1,28 @@
+
+<div id="report-title"><h1></h1></div>
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Ordernumber</th>
+            <th>Orderdate</th>
+            <th>Requireddate</th>
+            <th>Shippeddate</th>
+            <th>Status</th>
+            <th>Comments</th>
+            <th>Customernumber</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.ordernumber %></td>
+            <td><%= record.orderdate %></td>
+            <td><%= record.requireddate %></td>
+            <td><%= record.shippeddate %></td>
+            <td><%= record.status %></td>
+            <td><%= record.comments %></td>
+            <td><%= record.customernumber %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>

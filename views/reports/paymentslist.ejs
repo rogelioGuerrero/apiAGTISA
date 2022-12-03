@@ -1,0 +1,22 @@
+
+<div id="report-title"><h1></h1></div>
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Customernumber</th>
+            <th>Checknumber</th>
+            <th>Paymentdate</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.customernumber %></td>
+            <td><%= record.checknumber %></td>
+            <td><%= record.paymentdate %></td>
+            <td><%= record.amount %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>

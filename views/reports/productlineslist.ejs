@@ -1,0 +1,22 @@
+
+<div id="report-title"><h1></h1></div>
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Productline</th>
+            <th>Textdescription</th>
+            <th>Htmldescription</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.productline %></td>
+            <td><%= record.textdescription %></td>
+            <td><%= record.htmldescription %></td>
+            <td><%= record.image %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>

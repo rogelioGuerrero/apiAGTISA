@@ -1,0 +1,30 @@
+
+<div id="report-title"><h1></h1></div>
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Employeenumber</th>
+            <th>Lastname</th>
+            <th>Firstname</th>
+            <th>Extension</th>
+            <th>Email</th>
+            <th>Officecode</th>
+            <th>Reportsto</th>
+            <th>Jobtitle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.employeenumber %></td>
+            <td><%= record.lastname %></td>
+            <td><%= record.firstname %></td>
+            <td><%= record.extension %></td>
+            <td><%= record.email %></td>
+            <td><%= record.officecode %></td>
+            <td><%= record.reportsto %></td>
+            <td><%= record.jobtitle %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
