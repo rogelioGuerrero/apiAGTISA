@@ -1,7 +1,7 @@
 var config = {
 	app: {
 		name: "agtisa",
-		url: "http://localhost:8060",
+		url: "https://api-sa.onrender.com/api",
 		frontendUrl: "http://localhost:8050",
 		secret: "4a0d3acc37706a54952d277d2c4edc6d",
 		language: "spanish",
@@ -28,13 +28,13 @@ var config = {
 		ordertype: "DESC"
 	},
 	mail: {
-		username:"",
-		password: "",
-		senderemail:"",
-		sendername:"",
-		host: "",
+		username:"rg@uoc.edu",
+		password: "A123456z",
+		senderemail:"rg@uoc.edu",
+		sendername:"jose",
+		host: "smtp.gmail.com",
 		secure: true,
-		port: ""
+		port: "465"
 	},
 	upload: {
 		tempDir: "uploads/temp/",
